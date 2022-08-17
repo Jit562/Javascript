@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Stay</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        #logo{
+            width: 100px;
+            height: auto;
+            padding-top: 20px;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: blueviolet;
+        }
+        #menu-bar ul li{
+           display: inline-block;
+           padding: 15px 10px;
+           color: azure;
+           font-size: 20px;
+           font-weight: bold;
+        }
+
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+
+        #abimg{
+            width: 100%;
+            
+        }
+        p{
+            text-align: justify;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .sticky{
+          position: fixed;
+          width: 100%;
+          top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="./nature.jpg" alt="log-img" id="logo">
+    </div>
+
+    <nav id="menu-bar">
+        <ul>
+            <li>Home</li>
+            <li>Aboutus</li>
+            <li>Ours Team</li>
+            <li>Client</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+    <dib id="container">
+        <h1>About Us</h1>
+        <img src="./av2.jpg" alt="bg-img" id="abimg">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eos adipisci sequi. Provident possimus alias quae, ullam sint aperiam ad blanditiis laborum quam? Sunt unde obcaecati accusamus, eveniet ullam quasi, dolore velit natus nobis consectetur hic non eos vitae, optio sed. Ea corporis officia quidem nisi! Commodi, magnam tenetur. Dignissimos perspiciatis enim reprehenderit in ut! Deleniti maxime sapiente quod laudantium, ipsa eius, mollitia recusandae accusamus laborum nisi vero sequi totam nihil magni. Nemo ex ipsam dolorem natus harum modi unde reprehenderit doloribus minima sapiente laudantium commodi libero, minus, facilis consequuntur id suscipit cumque neque pariatur? Nihil dolore in mollitia libero at, nisi ipsum distinctio neque provident nobis minima? Voluptatem dolore ad fuga accusamus quo, exercitationem, hic, corporis veritatis cumque doloribus similique rem doloremque animi beatae ipsa iste blanditiis? Perferendis hic quaerat consequatur labore vel soluta aliquid blanditiis temporibus, cumque voluptas ipsa adipisci, dolore quas eius impedit exercitationem, voluptates illum eligendi porro? Laborum, reprehenderit voluptatibus odit atque libero repudiandae illo provident, excepturi iure assumenda cum recusandae animi exercitationem dolore aut, nam voluptatem quia beatae ipsam non! Quo non, ab, eligendi, dolor voluptatibus ratione eveniet maiores illum optio nihil sit officia facilis sapiente facere voluptatem numquam fuga repudiandae error in? Placeat eos commodi quibusdam ad architecto velit, sequi est inventore, mollitia facilis alias, veritatis autem. Laudantium eum asperiores, hic mollitia optio aspernatur nisi dolores a rem suscipit praesentium iure consequatur quas velit cumque repellendus eligendi quia sit voluptatibus dolorum. Numquam vel, optio magnam distinctio ratione nam beatae aliquam. Veniam sequi tempore, earum laudantium voluptatum architecto modi quos quidem ullam debitis? Dolores quidem debitis culpa. Quod, vel. Rem, beatae officia veritatis ea expedita suscipit? Voluptate, consequatur repellat commodi error totam deleniti molestiae cupiditate numquam esse? Aliquid odio fugit tempore quam expedita eaque natus voluptatibus accusamus autem! Pariatur quia cum, provident non repellendus culpa?
+        </p>
+    </dib>
+
+    <script>
+
+        window.addEventListener('scroll', function(){
+
+           let navbar = document.getElementById('menu-bar');
+
+           if(window.pageYOffset >=132.637){
+              navbar.classList.add('sticky');  
+           }else{
+            navbar.classList.remove('sticky');
+           }
+
+        });
+
+    </script>
+</body>
+</html>
